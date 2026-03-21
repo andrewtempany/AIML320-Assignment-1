@@ -1,0 +1,135 @@
+Decision Tree — trained on 50 instances
+Overall Accuracy: 100.0%
+============================================================
+
+TREE STRUCTURE (depth-first)
+------------------------------------------------------------
+feature_6 (IG: 0.085294, Entropy: 0.904381)
+  -- feature_6 <= 0.0 --
+    feature_3 (IG: 0.206799, Entropy: 0.676942)
+    -- feature_3 <= 20.0 --
+      feature_3 (IG: 0.244905, Entropy: 0.940286)
+      -- feature_3 <= 18.0 --
+        feature_2 (IG: 0.122556, Entropy: 0.811278)
+        -- feature_2 <= 0.0 --
+          feature_3 (IG: 0.178849, Entropy: 0.918296)
+          -- feature_3 <= 6.0 --
+            feature_3 (IG: 0.918296, Entropy: 0.918296)
+            -- feature_3 <= 0.0 --
+              leaf {0: 1, 1: 0}
+            -- feature_3 > 0.0 --
+              leaf {0: 0, 1: 2}
+          -- feature_3 > 6.0 --
+            feature_1 (IG: 0.190875, Entropy: 0.650022)
+            -- feature_1 <= 0.0 --
+              feature_3 (IG: 0.918296, Entropy: 0.918296)
+              -- feature_3 <= 11.0 --
+                leaf {0: 2, 1: 0}
+              -- feature_3 > 11.0 --
+                leaf {0: 0, 1: 1}
+            -- feature_1 > 0.0 --
+              leaf {0: 3, 1: 0}
+        -- feature_2 > 0.0 --
+          leaf {0: 3, 1: 0}
+      -- feature_3 > 18.0 --
+        leaf {0: 0, 1: 2}
+    -- feature_3 > 20.0 --
+      leaf {0: 14, 1: 0}
+  -- feature_6 > 0.0 --
+    feature_4 (IG: 0.333597, Entropy: 1.000000)
+    -- feature_4 <= 0.0 --
+      feature_1 (IG: 0.197160, Entropy: 0.503258)
+      -- feature_1 <= 0.0 --
+        leaf {0: 0, 1: 6}
+      -- feature_1 > 0.0 --
+        feature_5 (IG: 0.918296, Entropy: 0.918296)
+        -- feature_5 <= 0.0 --
+          leaf {0: 0, 1: 2}
+        -- feature_5 > 0.0 --
+          leaf {0: 1, 1: 0}
+    -- feature_4 > 0.0 --
+      feature_0 (IG: 0.405907, Entropy: 0.779350)
+      -- feature_0 <= 0.0 --
+        feature_3 (IG: 0.419973, Entropy: 0.970951)
+        -- feature_3 <= 37.0 --
+          feature_3 (IG: 0.918296, Entropy: 0.918296)
+          -- feature_3 <= 4.0 --
+            leaf {0: 0, 1: 1}
+          -- feature_3 > 4.0 --
+            leaf {0: 2, 1: 0}
+        -- feature_3 > 37.0 --
+          leaf {0: 0, 1: 2}
+      -- feature_0 > 0.0 --
+        leaf {0: 8, 1: 0}
+
+============================================================
+FEATURE IMPORTANCE ANALYSIS
+------------------------------------------------------------
+Feature    Max IG          Used in Tree   
+----------------------------------------
+feature_6  0.085294        ✓ YES          
+feature_4  0.058474        ✓ YES          
+feature_3  0.044576        ✓ YES          
+feature_1  0.038918        ✓ YES          
+feature_5  0.038918        ✓ YES          
+feature_0  0.028376        ✓ YES          
+feature_2  0.002183        ✓ YES          
+----------------------------------------
+Features used: [0, 1, 2, 3, 4, 5, 6]
+Features NOT used: []
+
+============================================================
+PER-INSTANCE RESULTS
+------------------------------------------------------------
+  Instance |  Predicted |     Actual | Result
+----------------------------------------------------
+         1 |          0 |          0 | CORRECT
+         2 |          0 |          0 | CORRECT
+         3 |          0 |          0 | CORRECT
+         4 |          1 |          1 | CORRECT
+         5 |          1 |          1 | CORRECT
+         6 |          1 |          1 | CORRECT
+         7 |          1 |          1 | CORRECT
+         8 |          0 |          0 | CORRECT
+         9 |          0 |          0 | CORRECT
+        10 |          0 |          0 | CORRECT
+        11 |          1 |          1 | CORRECT
+        12 |          0 |          0 | CORRECT
+        13 |          1 |          1 | CORRECT
+        14 |          0 |          0 | CORRECT
+        15 |          1 |          1 | CORRECT
+        16 |          0 |          0 | CORRECT
+        17 |          0 |          0 | CORRECT
+        18 |          0 |          0 | CORRECT
+        19 |          0 |          0 | CORRECT
+        20 |          1 |          1 | CORRECT
+        21 |          1 |          1 | CORRECT
+        22 |          0 |          0 | CORRECT
+        23 |          0 |          0 | CORRECT
+        24 |          0 |          0 | CORRECT
+        25 |          1 |          1 | CORRECT
+        26 |          0 |          0 | CORRECT
+        27 |          1 |          1 | CORRECT
+        28 |          0 |          0 | CORRECT
+        29 |          0 |          0 | CORRECT
+        30 |          0 |          0 | CORRECT
+        31 |          0 |          0 | CORRECT
+        32 |          1 |          1 | CORRECT
+        33 |          0 |          0 | CORRECT
+        34 |          0 |          0 | CORRECT
+        35 |          1 |          1 | CORRECT
+        36 |          1 |          1 | CORRECT
+        37 |          0 |          0 | CORRECT
+        38 |          0 |          0 | CORRECT
+        39 |          0 |          0 | CORRECT
+        40 |          0 |          0 | CORRECT
+        41 |          1 |          1 | CORRECT
+        42 |          0 |          0 | CORRECT
+        43 |          0 |          0 | CORRECT
+        44 |          0 |          0 | CORRECT
+        45 |          0 |          0 | CORRECT
+        46 |          0 |          0 | CORRECT
+        47 |          0 |          0 | CORRECT
+        48 |          0 |          0 | CORRECT
+        49 |          1 |          1 | CORRECT
+        50 |          0 |          0 | CORRECT
