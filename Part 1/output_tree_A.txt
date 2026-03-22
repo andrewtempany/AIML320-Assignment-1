@@ -1,21 +1,22 @@
 Decision Tree — trained on 100 instances
-Overall Accuracy: 100.0%
+Full Dataset Accuracy: 100.0%
+70/30 Split Test Accuracy: 100.0%  (30/30)
 ============================================================
 
 TREE STRUCTURE (depth-first)
 ------------------------------------------------------------
-feature_0 (IG: 0.116673, Entropy: 0.402179)
-  -- feature_0 <= 0.0 --
-    feature_1 (IG: 0.321810, Entropy: 0.732067)
-    -- feature_1 <= 0.0 --
+att0 (IG: 0.116673, Entropy: 0.402179)
+  -- att0 <= 0.0 --
+    att1 (IG: 0.321810, Entropy: 0.732067)
+    -- att1 <= 0.0 --
       leaf {0: 0, 1: 23}
-    -- feature_1 > 0.0 --
-      feature_2 (IG: 1.000000, Entropy: 1.000000)
-      -- feature_2 <= 0.0 --
+    -- att1 > 0.0 --
+      att2 (IG: 1.000000, Entropy: 1.000000)
+      -- att2 <= 0.0 --
         leaf {0: 0, 1: 8}
-      -- feature_2 > 0.0 --
+      -- att2 > 0.0 --
         leaf {0: 8, 1: 0}
-  -- feature_0 > 0.0 --
+  -- att0 > 0.0 --
     leaf {0: 0, 1: 61}
 
 ============================================================
@@ -23,13 +24,13 @@ FEATURE IMPORTANCE ANALYSIS
 ------------------------------------------------------------
 Feature    Max IG          Used in Tree   
 ----------------------------------------
-feature_0  0.116673        ✓ YES          
-feature_2  0.098343        ✓ YES          
-feature_1  0.090168        ✓ YES          
-feature_3  0.000000        ✗ NO           
+att0       0.116673        ✓ YES          
+att2       0.098343        ✓ YES          
+att1       0.090168        ✓ YES          
+att3       0.000000        ✗ NO           
 ----------------------------------------
-Features used: [0, 1, 2]
-Features NOT used: [3]
+Features used: ['att0', 'att1', 'att2']
+Features NOT used: ['att3']
 
 ============================================================
 PER-INSTANCE RESULTS

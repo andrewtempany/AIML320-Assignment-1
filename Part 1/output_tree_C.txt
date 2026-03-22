@@ -1,65 +1,66 @@
 Decision Tree — trained on 50 instances
-Overall Accuracy: 100.0%
+Full Dataset Accuracy: 100.0%
+70/30 Split Test Accuracy: 60.0%  (9/15)
 ============================================================
 
 TREE STRUCTURE (depth-first)
 ------------------------------------------------------------
-feature_6 (IG: 0.085294, Entropy: 0.904381)
-  -- feature_6 <= 0.0 --
-    feature_3 (IG: 0.206799, Entropy: 0.676942)
-    -- feature_3 <= 20.0 --
-      feature_3 (IG: 0.244905, Entropy: 0.940286)
-      -- feature_3 <= 18.0 --
-        feature_2 (IG: 0.122556, Entropy: 0.811278)
-        -- feature_2 <= 0.0 --
-          feature_3 (IG: 0.178849, Entropy: 0.918296)
-          -- feature_3 <= 6.0 --
-            feature_3 (IG: 0.918296, Entropy: 0.918296)
-            -- feature_3 <= 0.0 --
+att6 (IG: 0.085294, Entropy: 0.904381)
+  -- att6 <= 0.0 --
+    att3 (IG: 0.206799, Entropy: 0.676942)
+    -- att3 <= 20.0 --
+      att3 (IG: 0.244905, Entropy: 0.940286)
+      -- att3 <= 18.0 --
+        att2 (IG: 0.122556, Entropy: 0.811278)
+        -- att2 <= 0.0 --
+          att3 (IG: 0.178849, Entropy: 0.918296)
+          -- att3 <= 6.0 --
+            att3 (IG: 0.918296, Entropy: 0.918296)
+            -- att3 <= 0.0 --
               leaf {0: 1, 1: 0}
-            -- feature_3 > 0.0 --
+            -- att3 > 0.0 --
               leaf {0: 0, 1: 2}
-          -- feature_3 > 6.0 --
-            feature_1 (IG: 0.190875, Entropy: 0.650022)
-            -- feature_1 <= 0.0 --
-              feature_3 (IG: 0.918296, Entropy: 0.918296)
-              -- feature_3 <= 11.0 --
+          -- att3 > 6.0 --
+            att1 (IG: 0.190875, Entropy: 0.650022)
+            -- att1 <= 0.0 --
+              att3 (IG: 0.918296, Entropy: 0.918296)
+              -- att3 <= 11.0 --
                 leaf {0: 2, 1: 0}
-              -- feature_3 > 11.0 --
+              -- att3 > 11.0 --
                 leaf {0: 0, 1: 1}
-            -- feature_1 > 0.0 --
+            -- att1 > 0.0 --
               leaf {0: 3, 1: 0}
-        -- feature_2 > 0.0 --
+        -- att2 > 0.0 --
           leaf {0: 3, 1: 0}
-      -- feature_3 > 18.0 --
+      -- att3 > 18.0 --
         leaf {0: 0, 1: 2}
-    -- feature_3 > 20.0 --
+    -- att3 > 20.0 --
       leaf {0: 14, 1: 0}
-  -- feature_6 > 0.0 --
-    feature_4 (IG: 0.333597, Entropy: 1.000000)
-    -- feature_4 <= 0.0 --
-      feature_1 (IG: 0.197160, Entropy: 0.503258)
-      -- feature_1 <= 0.0 --
+  -- att6 > 0.0 --
+    att4 (IG: 0.333597, Entropy: 1.000000)
+    -- att4 <= 0.0 --
+      att1 (IG: 0.197160, Entropy: 0.503258)
+      -- att1 <= 0.0 --
         leaf {0: 0, 1: 6}
-      -- feature_1 > 0.0 --
-        feature_5 (IG: 0.918296, Entropy: 0.918296)
-        -- feature_5 <= 0.0 --
+      -- att1 > 0.0 --
+        att5 (IG: 0.918296, Entropy: 0.918296)
+        -- att5 <= 0.0 --
           leaf {0: 0, 1: 2}
-        -- feature_5 > 0.0 --
+        -- att5 > 0.0 --
           leaf {0: 1, 1: 0}
-    -- feature_4 > 0.0 --
-      feature_0 (IG: 0.405907, Entropy: 0.779350)
-      -- feature_0 <= 0.0 --
-        feature_3 (IG: 0.419973, Entropy: 0.970951)
-        -- feature_3 <= 37.0 --
-          feature_3 (IG: 0.918296, Entropy: 0.918296)
-          -- feature_3 <= 4.0 --
+    -- att4 > 0.0 --
+      att0 (IG: 0.405907, Entropy: 0.779350)
+      -- att0 <= 0.0 --
+        att3 (IG: 0.419973, Entropy: 0.970951)
+        -- att3 <= 37.0 --
+          att3 (IG: 0.918296, Entropy: 0.918296)
+          -- att3 <= 4.0 --
             leaf {0: 0, 1: 1}
-          -- feature_3 > 4.0 --
+          -- att3 > 4.0 --
             leaf {0: 2, 1: 0}
-        -- feature_3 > 37.0 --
+        -- att3 > 37.0 --
           leaf {0: 0, 1: 2}
-      -- feature_0 > 0.0 --
+      -- att0 > 0.0 --
         leaf {0: 8, 1: 0}
 
 ============================================================
@@ -67,15 +68,15 @@ FEATURE IMPORTANCE ANALYSIS
 ------------------------------------------------------------
 Feature    Max IG          Used in Tree   
 ----------------------------------------
-feature_6  0.085294        ✓ YES          
-feature_4  0.058474        ✓ YES          
-feature_3  0.044576        ✓ YES          
-feature_1  0.038918        ✓ YES          
-feature_5  0.038918        ✓ YES          
-feature_0  0.028376        ✓ YES          
-feature_2  0.002183        ✓ YES          
+att6       0.085294        ✓ YES          
+att4       0.058474        ✓ YES          
+att3       0.044576        ✓ YES          
+att1       0.038918        ✓ YES          
+att5       0.038918        ✓ YES          
+att0       0.028376        ✓ YES          
+att2       0.002183        ✓ YES          
 ----------------------------------------
-Features used: [0, 1, 2, 3, 4, 5, 6]
+Features used: ['att0', 'att1', 'att2', 'att3', 'att4', 'att5', 'att6']
 Features NOT used: []
 
 ============================================================

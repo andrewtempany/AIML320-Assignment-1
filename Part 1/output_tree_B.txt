@@ -1,85 +1,86 @@
 Decision Tree — trained on 1000 instances
-Overall Accuracy: 100.0%
+Full Dataset Accuracy: 100.0%
+70/30 Split Test Accuracy: 100.0%  (300/300)
 ============================================================
 
 TREE STRUCTURE (depth-first)
 ------------------------------------------------------------
-feature_3 (IG: 0.053199, Entropy: 0.953694)
-  -- feature_3 <= 0.0 --
-    feature_0 (IG: 0.064703, Entropy: 0.789655)
-    -- feature_0 <= 0.0 --
-      feature_2 (IG: 0.122961, Entropy: 0.489779)
-      -- feature_2 <= 0.0 --
+att3 (IG: 0.053199, Entropy: 0.953694)
+  -- att3 <= 0.0 --
+    att0 (IG: 0.064703, Entropy: 0.789655)
+    -- att0 <= 0.0 --
+      att2 (IG: 0.122961, Entropy: 0.489779)
+      -- att2 <= 0.0 --
         leaf {0: 0, 1: 117}
-      -- feature_2 > 0.0 --
-        feature_1 (IG: 0.301776, Entropy: 0.764205)
-        -- feature_1 <= 0.0 --
-          feature_4 (IG: 0.998846, Entropy: 0.998846)
-          -- feature_4 <= 0.0 --
+      -- att2 > 0.0 --
+        att1 (IG: 0.301776, Entropy: 0.764205)
+        -- att1 <= 0.0 --
+          att4 (IG: 0.998846, Entropy: 0.998846)
+          -- att4 <= 0.0 --
             leaf {0: 24, 1: 0}
-          -- feature_4 > 0.0 --
+          -- att4 > 0.0 --
             leaf {0: 0, 1: 26}
-        -- feature_1 > 0.0 --
+        -- att1 > 0.0 --
           leaf {0: 0, 1: 58}
-    -- feature_0 > 0.0 --
-      feature_2 (IG: 0.074023, Entropy: 0.938315)
-      -- feature_2 <= 0.0 --
-        feature_1 (IG: 0.996792, Entropy: 0.996792)
-        -- feature_1 <= 0.0 --
+    -- att0 > 0.0 --
+      att2 (IG: 0.074023, Entropy: 0.938315)
+      -- att2 <= 0.0 --
+        att1 (IG: 0.996792, Entropy: 0.996792)
+        -- att1 <= 0.0 --
           leaf {0: 0, 1: 49}
-        -- feature_1 > 0.0 --
+        -- att1 > 0.0 --
           leaf {0: 56, 1: 0}
-      -- feature_2 > 0.0 --
-        feature_1 (IG: 0.305770, Entropy: 0.767003)
-        -- feature_1 <= 0.0 --
-          feature_4 (IG: 0.999338, Entropy: 0.999338)
-          -- feature_4 <= 0.0 --
+      -- att2 > 0.0 --
+        att1 (IG: 0.305770, Entropy: 0.767003)
+        -- att1 <= 0.0 --
+          att4 (IG: 0.999338, Entropy: 0.999338)
+          -- att4 <= 0.0 --
             leaf {0: 32, 1: 0}
-          -- feature_4 > 0.0 --
+          -- att4 > 0.0 --
             leaf {0: 0, 1: 34}
-        -- feature_1 > 0.0 --
+        -- att1 > 0.0 --
           leaf {0: 0, 1: 77}
-  -- feature_3 > 0.0 --
-    feature_4 (IG: 0.162068, Entropy: 0.999977)
-    -- feature_4 <= 0.0 --
-      feature_2 (IG: 0.004754, Entropy: 0.834421)
-      -- feature_2 <= 0.0 --
-        feature_1 (IG: 0.405073, Entropy: 0.887418)
-        -- feature_1 <= 0.0 --
-          feature_0 (IG: 0.964690, Entropy: 0.964690)
-          -- feature_0 <= 0.0 --
+  -- att3 > 0.0 --
+    att4 (IG: 0.162068, Entropy: 0.999977)
+    -- att4 <= 0.0 --
+      att2 (IG: 0.004754, Entropy: 0.834421)
+      -- att2 <= 0.0 --
+        att1 (IG: 0.405073, Entropy: 0.887418)
+        -- att1 <= 0.0 --
+          att0 (IG: 0.964690, Entropy: 0.964690)
+          -- att0 <= 0.0 --
             leaf {0: 36, 1: 0}
-          -- feature_0 > 0.0 --
+          -- att0 > 0.0 --
             leaf {0: 0, 1: 23}
-        -- feature_1 > 0.0 --
+        -- att1 > 0.0 --
           leaf {0: 0, 1: 59}
-      -- feature_2 > 0.0 --
-        feature_0 (IG: 0.324162, Entropy: 0.782992)
-        -- feature_0 <= 0.0 --
+      -- att2 > 0.0 --
+        att0 (IG: 0.324162, Entropy: 0.782992)
+        -- att0 <= 0.0 --
           leaf {0: 0, 1: 79}
-        -- feature_0 > 0.0 --
-          feature_1 (IG: 0.999839, Entropy: 0.999839)
-          -- feature_1 <= 0.0 --
+        -- att0 > 0.0 --
+          att1 (IG: 0.999839, Entropy: 0.999839)
+          -- att1 <= 0.0 --
             leaf {0: 0, 1: 33}
-          -- feature_1 > 0.0 --
+          -- att1 > 0.0 --
             leaf {0: 34, 1: 0}
-    -- feature_4 > 0.0 --
-      feature_2 (IG: 0.320998, Entropy: 0.841410)
-      -- feature_2 <= 0.0 --
-        feature_0 (IG: 0.000948, Entropy: 0.999039)
-        -- feature_0 <= 0.0 --
-          feature_1 (IG: 1.000000, Entropy: 1.000000)
-          -- feature_1 <= 0.0 --
+    -- att4 > 0.0 --
+      att2 (IG: 0.320998, Entropy: 0.841410)
+      -- att2 <= 0.0 --
+        att0 (IG: 0.000948, Entropy: 0.999039)
+        -- att0 <= 0.0 --
+          att1 (IG: 1.000000, Entropy: 1.000000)
+          -- att1 <= 0.0 --
             leaf {0: 0, 1: 34}
-          -- feature_1 > 0.0 --
+          -- att1 > 0.0 --
             leaf {0: 34, 1: 0}
-        -- feature_0 > 0.0 --
-          feature_1 (IG: 0.996209, Entropy: 0.996209)
-          -- feature_1 <= 0.0 --
+        -- att0 > 0.0 --
+          att1 (IG: 0.996209, Entropy: 0.996209)
+          -- att1 <= 0.0 --
             leaf {0: 32, 1: 0}
-          -- feature_1 > 0.0 --
+          -- att1 > 0.0 --
             leaf {0: 0, 1: 37}
-      -- feature_2 > 0.0 --
+      -- att2 > 0.0 --
         leaf {0: 126, 1: 0}
 
 ============================================================
@@ -87,13 +88,13 @@ FEATURE IMPORTANCE ANALYSIS
 ------------------------------------------------------------
 Feature    Max IG          Used in Tree   
 ----------------------------------------
-feature_3  0.053199        ✓ YES          
-feature_4  0.016473        ✓ YES          
-feature_0  0.011680        ✓ YES          
-feature_2  0.005154        ✓ YES          
-feature_1  0.000582        ✓ YES          
+att3       0.053199        ✓ YES          
+att4       0.016473        ✓ YES          
+att0       0.011680        ✓ YES          
+att2       0.005154        ✓ YES          
+att1       0.000582        ✓ YES          
 ----------------------------------------
-Features used: [0, 1, 2, 3, 4]
+Features used: ['att0', 'att1', 'att2', 'att3', 'att4']
 Features NOT used: []
 
 ============================================================
